@@ -1,9 +1,9 @@
 import os
 from dotenv import load_dotenv
 
-from YouTubeAudioDownloader import YouTubeAudioDownloader
-from AudioTranscriber import AudioTranscriber
-from AutoGenInteraction import AutoGenInteraction
+from youtube.YouTubeAudioDownloader import YouTubeAudioDownloader
+from youtube.AudioTranscriber import AudioTranscriber
+from youtube.AutoGenInteraction import AutoGenInteraction
 
 load_dotenv()
 
