@@ -3,12 +3,15 @@ import autogen
 
 class AutoGenInteraction:
     def __init__(self, api_key, transcription):
+        # gpt-4o is removed from the API on 2027-01-14; gpt-6-luna is OpenAI's
+        # replacement (https://developers.openai.com/api/docs/deprecations).
+        # Luna rejects temperature unless reasoning_effort is "none", so it is
+        # no longer set here.
         self.llm_config = {
             "config_list": [{
-                "model": "gpt-4o",
+                "model": "gpt-6-luna",
                 "api_key": api_key
             }],
-            "temperature": 0,
             "cache_seed": None
         }
         self.transcription = transcription
