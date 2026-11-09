@@ -7,7 +7,7 @@
 2. `cd yt-video-summary`
 3. type `pip install -r requirements.txt` in terminal (Python 3.10 to 3.12; `pyautogen==0.2.28` does not support 3.13)
 4. add your YouTube URL into *main.py*
-5. add your openai key to the .env property
+5. copy `.env.example` to `.env` and put your OpenAI key in it (`.env` is gitignored, so the key stays out of git)
 6. run `python main.py`
 
 You also need `ffmpeg` on your PATH: yt-dlp uses it to extract the m4a audio and pydub uses it to split it.
