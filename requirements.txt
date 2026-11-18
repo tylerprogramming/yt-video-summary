@@ -1,7 +1,7 @@
 annotated-types==0.7.0
 anyio==4.4.0
 Brotli==1.1.0
-certifi==2024.6.2
+certifi==2026.10.23
 charset-normalizer==3.3.2
 diskcache==5.6.3
 distro==1.9.0
