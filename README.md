@@ -12,4 +12,6 @@
 
 You also need `ffmpeg` on your PATH: yt-dlp uses it to extract the m4a audio and pydub uses it to split it.
 
-If the download step fails, YouTube has likely changed something that the pinned `yt-dlp==2024.5.27` cannot handle. Run `pip install -U yt-dlp`.
+yt-dlp also needs a JavaScript runtime for YouTube. Install [Deno](https://deno.land), the runtime yt-dlp enables by default (`pip install deno` works too). Without one, yt-dlp warns "No supported JavaScript runtime could be found" and some formats may be missing. See the [yt-dlp EJS wiki](https://github.com/yt-dlp/yt-dlp/wiki/EJS).
+
+If the download step fails, YouTube has likely changed something that the pinned `yt-dlp==2026.10.21` cannot handle. Run `pip install -U yt-dlp yt-dlp-ejs` (yt-dlp releases after 2026.10.21 need Python 3.11+).
